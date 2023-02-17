@@ -1,8 +1,10 @@
 package com.bridgelabz;
 
-public class AddressBook {
+public class AddressBookMain {
     public static void main(String[] args) {
         System.out.println("Welcome to AddressBook System on Master Branch");
+        AddressBookMethods addressBookMethods = new AddressBookMethods();
+
 
     }
 }
