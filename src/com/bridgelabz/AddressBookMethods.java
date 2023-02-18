@@ -94,6 +94,18 @@ public class AddressBookMethods {
             }
         }
     }
+    public void deleteContact(){
+        System.out.println("Enter the first name to delete contact");
+        String name = sc.nextLine();
+        int index =0;
+        for(Contact con:list){
+            if(con.getFirstName().equals(name)){
+                list.remove(index);
+                break;
+            }
+            index++;
+        }
+    }
 
 
 }

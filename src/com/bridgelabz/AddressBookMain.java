@@ -14,9 +14,13 @@ public class AddressBookMain {
         System.out.println(addressBookMethods.list);
 
         System.out.println("If you want to edit any contact press 1");
+        System.out.println("If you want to delete any contact press 2");
         int check= scanner.nextInt();
         if(check==1){
             addressBookMethods.editContact();
+
+        }else if(check==2){
+            addressBookMethods.deleteContact();
 
         }else{
             System.out.println("Thanks for using this address-book");
