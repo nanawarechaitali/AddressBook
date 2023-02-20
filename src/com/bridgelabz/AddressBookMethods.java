@@ -7,6 +7,18 @@ public class AddressBookMethods {
     Scanner sc =new Scanner(System.in);
 
     ArrayList<Contact>list= new ArrayList<>();
+    String name;
+    public void duplicateContactCheck(){
+        System.out.println("Enter first name");
+        name = sc.nextLine();
+        for(Contact cc : list){
+            if(cc.getFirstName().equals(name)){
+                System.out.println("contact already exist");
+                return;
+            }
+        }
+        newContact();
+    }
     public void newContact(){
         System.out.println("Enter first name");
         String firstName = sc.nextLine();
