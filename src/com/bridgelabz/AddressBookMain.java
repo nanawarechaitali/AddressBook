@@ -42,6 +42,19 @@ public class AddressBookMain {
                 case 7:
                     obj.PrintBook();
                     break;
+                case 8:
+                    System.out.println("Please enter the city");
+                    Scanner s1 = new Scanner(System.in);
+                    String city = s1.next();
+                    obj.searchByCity(city);
+                    break;
+
+                case 9:
+                    System.out.println("Please enter the state");
+                    Scanner s2 = new Scanner(System.in);
+                    String state = s2.next();
+                    obj.searchState(state);
+                    break;
                 case 0:
                     System.exit(0);
                     break;
