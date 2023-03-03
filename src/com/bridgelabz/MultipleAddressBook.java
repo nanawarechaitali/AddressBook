@@ -70,7 +70,8 @@ public class MultipleAddressBook {
         for(String name : addressBookMap.keySet())addressBookMap.get(name).searchByCity(city);
 
     }
-    public void searchState(String state){
+   public void searchState(String state){
         for(String name:addressBookMap.keySet())addressBookMap.get(name).searchByState(state);
     }
+
 }

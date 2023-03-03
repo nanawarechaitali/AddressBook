@@ -127,13 +127,13 @@ public class AddressBookMethods {
             System.out.println("Search result" +cc);
         }
 
-            }
-            public void searchByState(String state){
+    }
+    public void searchByState(String state){
         List<Contact> states = list.stream().filter(x->x.getState().equalsIgnoreCase(state)).collect(Collectors.toList());
         for(Contact cc : states){
             System.out.println("Search result" +cc);
-
         }
+
 
     }
 
