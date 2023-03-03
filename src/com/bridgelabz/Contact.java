@@ -1,11 +1,20 @@
 package com.bridgelabz;
 
 public class Contact {
-    private String firstName,lastName,address,city,state,zip;
+    private String firstName,lastName,address,city,state,zip,contact;
 
     public String getFirstName() {
         return firstName;
     }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -41,6 +50,7 @@ public class Contact {
         return state;
     }
 
+
     public void setState(String state) {
         this.state = state;
     }
@@ -52,6 +62,7 @@ public class Contact {
     public void setZip(String zip) {
         this.zip = zip;
     }
+
     Contact(){}
         public Contact(String firstName,String lastName,String address,String city,String state,String zip){
         this.firstName=firstName;
@@ -75,5 +86,7 @@ public class Contact {
                 ", zip='" + zip + '\'' +
                 '}';
     }
+
+
 }
 

@@ -138,4 +138,10 @@ public class AddressBookMethods {
     }
 
 
+    public void searchByContact(String contact) {
+        List<Contact> contacts = list.stream().filter(x->x.getContact().equalsIgnoreCase(contact)).collect(Collectors.toList());
+        for(Contact cc : contacts){
+            System.out.println("Search result" +cc);
+        }
+    }
 }

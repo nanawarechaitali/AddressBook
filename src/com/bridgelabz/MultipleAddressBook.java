@@ -73,5 +73,9 @@ public class MultipleAddressBook {
    public void searchState(String state){
         for(String name:addressBookMap.keySet())addressBookMap.get(name).searchByState(state);
     }
+    public void searchContact(String contact){
+        for(String name:addressBookMap.keySet())addressBookMap.get(name).searchByContact(contact);
+
+    }
 
 }

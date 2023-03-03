@@ -31,7 +31,7 @@ public class AddressBookMain {
                     break;
                 case 4:
                     obj.deleteAddressBok();
-                    ;
+
                     break;
                 case 5:
                     obj.deleteAddressBok();
@@ -54,6 +54,13 @@ public class AddressBookMain {
                     Scanner s2 = new Scanner(System.in);
                     String state = s2.next();
                     obj.searchState(state);
+                    break;
+
+                case 10:
+                    System.out.println("Please enter the contactnumber");
+                    Scanner s3 =new Scanner(System.in);
+                    String  contact = s3.next();
+                    obj.searchContact(contact);
                     break;
                 case 0:
                     System.exit(0);
